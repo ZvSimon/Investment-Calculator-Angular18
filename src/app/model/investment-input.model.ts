@@ -1,4 +1,4 @@
-export interface InvestmentInput {
+export interface InvestmentInputModel {
   initialInvestment:number,
   duration:number,
   annualInvestment:number,

@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Output} from '@angular/core';
 import {FormsModule} from "@angular/forms";
-import {InvestmentInput} from "../model/investment-input";
+import {InvestmentInputModel} from "../model/investment-input.model";
 
 @Component({
   selector: 'app-user-input',
@@ -10,7 +10,7 @@ import {InvestmentInput} from "../model/investment-input";
   styleUrl: './user-input.component.css'
 })
 export class UserInputComponent {
-  @Output() calculate = new EventEmitter<InvestmentInput>()
+  @Output() calculate = new EventEmitter<InvestmentInputModel>()
   enteredInitialInvestment:string = '0';
   enteredAnnualInterest:string = '0';
   enteredExpectedReturn:string = '5';

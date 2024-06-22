@@ -23,6 +23,10 @@ export class UserInputComponent {
     expectedReturn: Number(this.enteredExpectedReturn()),
     duration:Number(this.enteredDuration()),
   });
+  this.enteredInitialInvestment.set('0');
+  this.enteredAnnualInvestment.set('0');
+  this.enteredExpectedReturn.set('5');
+  this.enteredDuration.set('10');
   }
 
 
